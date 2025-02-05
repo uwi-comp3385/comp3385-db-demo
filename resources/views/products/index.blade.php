@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>Products</h2>
+    <div class="d-flex justify-content-between mb-5">
+        <h2>Products</h2>
+        <a href="{{ url('/products/create') }}" class="btn btn-primary">Add Product</a>
+    </div>
     <table class="table table-responsive table-striped table-bordered">
         <thead>
             <tr>
