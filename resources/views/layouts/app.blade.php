@@ -18,6 +18,7 @@
         <div class="container">
             <ul>
                 <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/products') }}">Products</a></li>
             </ul>
         </div>
     </nav>
