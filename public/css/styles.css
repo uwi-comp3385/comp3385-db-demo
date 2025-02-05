@@ -30,21 +30,6 @@ header {
   position: relative;
 }
 
-header:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  background-image: url("kisspng-flask-python-bottle-web-framework-web-application-flask-5ace6e94133f66.5495283515234781640788.png");
-  background-repeat: no-repeat;
-  /* background-position: 20% 0; */
-  background-size: contain;
-  width: 200px;
-  height: 200px;
-  opacity: 0.6;
-  top: 0;
-  left: 10%;
-}
-
 h1 {
   font-family: 'Lora';
   font-size: 2rem;
