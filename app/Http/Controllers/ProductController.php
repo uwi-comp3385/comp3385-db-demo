@@ -36,6 +36,6 @@ class ProductController extends Controller
         $product->stock = $request->input('stock');
         $product->save();
 
-        return redirect('/products');
+        return redirect('/products')->with('success', 'Product created!');
     }
 }

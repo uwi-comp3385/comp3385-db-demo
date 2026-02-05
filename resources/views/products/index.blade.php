@@ -5,6 +5,13 @@
         <h2>Products</h2>
         <a href="{{ url('/products/create') }}" class="btn btn-primary">Add Product</a>
     </div>
+
+    @if(session('success'))
+        <div class="alert alert-success">
+            {!! session('success') !!}
+        </div>
+    @endif
+
     <table class="table table-responsive table-striped table-bordered">
         <thead>
             <tr>
