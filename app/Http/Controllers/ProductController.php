@@ -12,7 +12,8 @@ class ProductController extends Controller
     public function index()
     {
         // $products = DB::table('products')->get();
-        $products = Product::all();
+        $products = Product::all(); // select * from products
+        // $products = Product::where('colour', '=', 'black')->get();
         // dd($products);
         return view('products.index', ['products' => $products]);
     }
@@ -34,6 +35,7 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         $product->featured = $request->input('featured');
         $product->stock = $request->input('stock');
+        $product->model_number = $request->input('model_number');
         $product->save();
 
         return redirect('/products')->with('success', 'Product created!');

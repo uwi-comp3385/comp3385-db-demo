@@ -20,6 +20,7 @@
                 <th>Price</th>
                 <th>Stock</th>
                 <th>featured</th>
+                <th>Color</th>
             </tr>
         </thead>
         <tbody>
@@ -30,6 +31,7 @@
                 <td>{{ $product->price }}</td>
                 <td>{{ $product->stock }}</td>
                 <td>{{ $product->featured }}</td>
+                <td>{{ $product->colour }}</td>
             </tr>
         @endforeach
         </tbody>
