@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Product;
+use App\Http\Requests\ProductRequest;
 
 class ProductController extends Controller
 {
@@ -21,17 +22,9 @@ class ProductController extends Controller
         return view('products.create');
     }
 
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'description' => 'required',
-            'brand' => 'required',
-            'sku' => 'required',
-            'price' => 'required|decimal:2',
-            'featured' => 'required',
-            'stock' => 'required|numeric',
-        ]);
+        $validated = $request->validated();
 
         $product = new Product();
         $product->name = $request->input('name');

@@ -26,6 +26,7 @@ class ProductFactory extends Factory
             'stock' => fake()->randomDigit(),
             'created_at' => fake()->dateTimeBetween('1 week ago', 'now'),
             'updated_at' => now(),
+            'model_number' => fake()->numerify('MDN-###'),
         ];
     }
 }

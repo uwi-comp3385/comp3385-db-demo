@@ -27,6 +27,10 @@
             <input type="text" name="brand" id="brand" class="form-control">
         </div>
         <div class="form-group mb-3">
+            <label for="model_number">Model Number</label>
+            <input type="text" name="model_number" id="model_number" class="form-control">
+        </div>
+        <div class="form-group mb-3">
             <label for="name">SKU</label>
             <input type="text" name="sku" id="sku" class="form-control">
         </div>
